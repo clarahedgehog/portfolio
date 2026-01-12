@@ -1,0 +1,29 @@
+.header-item {
+  display: none;
+}
+
+.skills-container {
+  background-color: white;
+  padding: 24px;
+  color: var(--background-primary);
+}
+
+.skills-title,
+.about-title {
+  margin: 0;
+}
+
+.skills-text {
+  text-align: justify;
+  padding: 0 16px;
+}
+
+.about-container {
+  padding: 24px;
+  padding-bottom: 0;
+  color: var(--color-primary);
+}
+
+.about-text {
+  text-align: justify;
+}

@@ -1,0 +1,75 @@
+:root {
+  --background-primary: #E09891;
+  --background-secondary: #E8B9AB;
+  --background-tetriary: #ADBCA5;
+  --color-primary: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-tetriary);
+  font-family: 'Alice';
+}
+
+.header-logo {
+  display: contents;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+.menu {
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.header-item {
+  display: none;
+}
+
+.menu-item:hover {
+  background-color: var(--background-tetriary);
+}
+
+.hero-img {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hero-link {
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+  padding: 16px;
+}

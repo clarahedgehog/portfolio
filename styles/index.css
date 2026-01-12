@@ -1,0 +1,57 @@
+:root {
+  --background-primary: #E09891;
+  --background-secondary: #E8B9AB;
+  --background-tetriary: #ADBCA5;
+  --color-primary: #ffffff;
+}
+
+.intro {
+  background-color: white;
+  padding: 24px;
+  color: var(--background-primary);
+}
+
+.intro-title {
+  margin: 0;
+}
+
+.intro-text {
+  text-align: justify;
+}
+
+.contact-button {
+  font-family: 'Alice';
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 26px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: var(--background-tetriary);
+  color: var(--color-primary)
+}
+
+.information-container {
+  padding: 24px;
+  padding-bottom: 0;
+}
+
+.learn-more {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.learn-more-images {
+  display: flex;
+  padding: 12px;
+}
+
+.learn-more-img {
+  width: 100%;
+  height: auto;
+}
