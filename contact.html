@@ -38,19 +38,22 @@
         <h2>Contact me</h2>
         <div class="user-input">
           <label for="firstName">First name:</label>
-          <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required />
+          <input type="text" autocomplete="given-name" name="firstName" id="firstName"
+            placeholder="Enter your first name" required />
         </div>
         <div class="user-input">
           <label for="email">Email address:</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+          <input type="email" autocomplete="off" name="email" id="email" placeholder="Enter your email address"
+            required />
         </div>
         <div class="user-input">
           <label for="phone">Phone number:</label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required />
+          <input type="tel" autocomplete="off" name="phone" id="phone" placeholder="Enter your phone number" required />
         </div>
         <div class="user-input">
           <label for="description">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          <textarea autocomplete="off" id="message" name="message" placeholder="Your Message" rows="5"
+            required></textarea>
         </div>
         <button class="submit-button">Get in touch</button>
       </div>
