@@ -1,1 +1,0 @@
-const contactButton = document.getElementsByClassName("contact-button")
