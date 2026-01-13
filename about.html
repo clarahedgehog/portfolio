@@ -8,20 +8,28 @@
   <link rel="icon" type="image/x-icon" href="./images/logo.png">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/typography.css">
   <script src="./js/about.js" defer></script>
+  <script src="./js/general.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header class="header">
-    <nav class="menu">
-      <a class="header-logo" src="index.html">
+    <nav class="topnav">
+      <a href="index.html">
         <img class="logo" src="./images/logo.png" alt="logo" width="152px" height="152px">
       </a>
-      <a href="index.html" class="menu-item active">Home</a>
-      <a href="about.html" class="menu-item">About me</a>
-      <a href="index.html" class="header-item">Clara Swahn</a>
-      <a href="projects.html" class="menu-item">My Projects</a>
-      <a href="contact.html" class="menu-item">Contact me</a>
+      <div id="myLinks">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="about.html" class="menu-item">About me</a>
+        <!-- <a href="index.html" class="header-item">Clara Swahn</a> -->
+        <a href="projects.html" class="menu-item">My Projects</a>
+        <a href="contact.html" class="menu-item">Contact me</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
 

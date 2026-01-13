@@ -1,0 +1,39 @@
+.header-item {
+  display: none;
+}
+
+.projects-intro {
+  background-color: white;
+  padding: 24px;
+  color: var(--background-primary);
+}
+
+.projects-title {
+  margin: 0;
+}
+
+.projects-text {
+  text-align: justify;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projects-item {
+  margin: 8px 0;
+  background-color: var(--background-tetriary);
+  padding: 16px;
+}
+
+.project-name,
+.project-link {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.project-link {
+  text-decoration: underline solid white;
+}

@@ -9,21 +9,28 @@
   <link rel="icon" type="image/x-icon" href="./images/logo.png">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/typography.css">
   <script src="./js/contact.js" defer></script>
+  <script src="./js/general.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
   <header class="header">
-    <nav class="menu">
-      <a class="header-logo" src="index.html">
+    <nav class="topnav">
+      <a href="index.html">
         <img class="logo" src="./images/logo.png" alt="logo" width="152px" height="152px">
       </a>
-      <a href="index.html" class="menu-item">Home</a>
-      <a href="about.html" class="menu-item">About me</a>
-      <a href="index.html" class="header-item">Clara Swahn</a>
-      <a href="projects.html" class="menu-item">My Projects</a>
-      <a href="contact.html" class="menu-item active">Contact me</a>
+      <div id="myLinks">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="about.html" class="menu-item">About me</a>
+        <!-- <a href="index.html" class="header-item">Clara Swahn</a> -->
+        <a href="projects.html" class="menu-item">My Projects</a>
+        <a href="contact.html" class="menu-item">Contact me</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
 
@@ -36,7 +43,7 @@
   <main class="main">
     <form action="mailto: clara.swahn@gmail.com" method="POST" enctype="text/plain" class="contact-form-container">
       <div id="contactForm">
-        <h2>Contact me</h2>
+        <h1>Contact me</h1>
         <div class="user-input">
           <label for="firstName">First name:</label>
           <input type="text" autocomplete="given-name" name="firstName" id="firstName"

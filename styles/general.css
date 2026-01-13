@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--background-tetriary);
-  font-family: 'Alice';
+  font-family: 'Alice', 'Times New Roman', Times, serif;
 }
 
 .header-logo {
@@ -31,27 +31,43 @@ body {
   height: auto;
 }
 
-.menu {
+.topnav {
+  overflow: hidden;
   background-color: var(--background-primary);
-  color: var(--color-primary);
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
 }
 
 .menu-item {
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
   color: var(--color-primary);
-  font-size: 1rem;
+  background: var(--background-secondary);
+}
+
+.icon {
+  background: var(--background-primary);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  padding: 20px 16px;
+}
+
+.topnav a:hover {
+  background-color: var(--background-primary);
+  color: var(--color-primary);
 }
 
 .header-item {
   display: none;
-}
-
-.menu-item:hover {
-  background-color: var(--background-tetriary);
 }
 
 .hero-img {
