@@ -1,10 +1,8 @@
-# MY PORTFILIO
+# My Portfolio
 
-Welcome to our API project!
-In this project we have created a webpage that retrieves data from an external API using modern JavaScript practices.
-The goal is to demonstrate our understanding of JSON, working with APIs, and HTML/CSS/JavaScript.<br>
-
-We have created 3 seperate API's containing 50 movies each. One Christmas, one Halloween, and one Valentine's day themed. 
+Welcome to my portfolio!
+This was created as a school project using Javascript and the Github API.
+The goal was to demonstrate our understanding of JSON, working with APIs, and HTML/CSS/JavaScript.<br>
 
 ## Link to the deployed website 
 
