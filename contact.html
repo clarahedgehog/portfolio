@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact me</title>
   <link rel="preconnect">
-  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="icon" type="image/x-icon" href="./images/logo.AVIF">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="./styles/typography.css">
@@ -17,15 +17,18 @@
 <body>
   <header class="header">
     <nav class="topnav">
-      <a href="index.html">
-        <img class="logo" src="./images/logo-mobile.AVIF" alt="logo" width="152px" height="152px">
+      <a class="logo" href="index.html">
+        <picture>
+          <source media="(min-width:650px)" srcset="./images/logo.AVIF">
+          <source media="(max-width:650px)" srcset="./images/logo-mobile.AVIF">
+          <img class="logo" src="./images/logo.AVIF" alt="logo">
+        </picture>
       </a>
       <div id="myLinks">
         <a href="index.html" class="menu-item">Home</a>
         <a href="about.html" class="menu-item">About me</a>
-        <!-- <a href="index.html" class="header-item">Clara Swahn</a> -->
         <a href="projects.html" class="menu-item">My Projects</a>
-        <a href="contact.html" class="menu-item">Contact me</a>
+        <a href="contact.html" class="menu-item active-page">Contact me</a>
       </div>
       <div class="icon" onclick="myFunction()">
         <img class="hamburger" src="./images/hamburger.AVIF" alt="hamburger-menu" width="50px" height="50px">
@@ -33,16 +36,16 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <a class="hero-link" href="index.html">
-      <img class="hero-img" src="./images/hero-mobile.AVIF" alt="hero" width="824px" height="412px">
-    </a>
+  <div class="hero-img-container">
+    <img fetchpriority="high" class="hero-img-mobile" src="./images/hero-mobile.AVIF" alt="hero">
+    <img fetchpriority="high" class="hero-img" src="./images/clara.AVIF" alt="hero">
+    <h2 class="intro-header">Clara Swahn <br> Frontend Developer</h2>
   </div>
 
   <main class="main">
     <form action="mailto: clara.swahn@gmail.com" method="POST" enctype="text/plain" class="contact-form-container">
       <div id="contactForm">
-        <h1>Contact me</h1>
+        <h1 class="intro-title">Contact me</h1>
         <div class="user-input">
           <label for="firstName">First name:</label>
           <input type="text" autocomplete="given-name" name="firstName" id="firstName"

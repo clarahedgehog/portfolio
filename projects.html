@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects</title>
-  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="icon" type="image/x-icon" href="./images/logo.AVIF">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/projects.css">
   <link rel="stylesheet" href="./styles/typography.css">
@@ -16,14 +16,17 @@
 <body>
   <header class="header">
     <nav class="topnav">
-      <a href="index.html">
-        <img class="logo" src="./images/logo-mobile.AVIF" alt="logo" width="152px" height="152px">
+      <a class="logo" href="index.html">
+        <picture>
+          <source media="(min-width:650px)" srcset="./images/logo.AVIF">
+          <source media="(max-width:650px)" srcset="./images/logo-mobile.AVIF">
+          <img class="logo" src="./images/logo.AVIF" alt="logo">
+        </picture>
       </a>
       <div id="myLinks">
         <a href="index.html" class="menu-item">Home</a>
         <a href="about.html" class="menu-item">About me</a>
-        <!-- <a href="index.html" class="header-item">Clara Swahn</a> -->
-        <a href="projects.html" class="menu-item">My Projects</a>
+        <a href="projects.html" class="menu-item active-page">My Projects</a>
         <a href="contact.html" class="menu-item">Contact me</a>
       </div>
       <div class="icon" onclick="myFunction()">
@@ -32,16 +35,16 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <a class="hero-link" href="index.html">
-      <img class="hero-img" src="./images/hero-mobile.AVIF" alt="hero" width="824px" height="412px">
-    </a>
+  <div class="hero-img-container">
+    <img fetchpriority="high" class="hero-img-mobile" src="./images/hero-mobile.AVIF" alt="hero">
+    <img fetchpriority="high" class="hero-img" src="./images/clara.AVIF" alt="hero">
+    <h1 class="intro-header">Clara Swahn <br> Frontend Developer</h1>
   </div>
 
   <main class="main">
-    <div class="projects-intro">
-      <h1 class="projects-title">My Projects</h1>
-      <p class="projects-text">
+    <div class="information-container intro">
+      <h1 class="intro-title">My Projects</h1>
+      <p class="intro-text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus expedita nulla alias deleniti deserunt rerum,
         culpa labore hic, rem distinctio doloribus mollitia, consectetur reiciendis vitae. Assumenda esse dolore cum
         sed?

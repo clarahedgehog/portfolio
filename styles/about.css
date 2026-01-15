@@ -1,29 +1,44 @@
-.header-item {
-  display: none;
-}
-
-.skills-container {
-  background-color: white;
-  padding: 24px;
+.intro {
+  background-color: var(--color-primary);
   color: var(--background-primary);
 }
 
-.skills-title,
-.about-title {
+.information-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-title,
+.intro-text {
   margin: 0;
 }
 
-.skills-text {
+.intro-text {
   text-align: justify;
-  padding: 0 16px;
 }
 
-.about-container {
-  padding: 24px;
-  padding-bottom: 0;
+.about {
   color: var(--color-primary);
 }
 
-.about-text {
-  text-align: justify;
+@media screen and (min-width: 768px) {
+
+  .intro-title {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+
 }

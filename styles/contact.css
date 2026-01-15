@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-h2 {
+.intro-title {
   margin-top: 0;
   text-align: center;
 }
@@ -55,4 +55,25 @@ textarea {
 .submit-button:hover {
   background-color: var(--background-secondary);
   color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .intro-title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  #contactForm {
+    gap: 20px;
+  }
+
+  .user-input {
+    font-size: 1.4rem;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
 }
