@@ -10,6 +10,10 @@
   gap: 20px;
 }
 
+.intro-title {
+  font-size: 2rem;
+}
+
 .intro-title,
 .intro-text {
   margin: 0;
