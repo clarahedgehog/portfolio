@@ -100,11 +100,17 @@ body {
     display: none;
   }
 
+  .intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .intro-header {
     font-size: 4rem;
     color: var(--color-primary);
-    align-self: center;
     display: block;
+    margin: 0;
   }
 
   .hero-img {
